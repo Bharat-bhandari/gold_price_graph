@@ -39,7 +39,11 @@ const App = () => {
   // Symbol selection (INR ETF vs COMEX futures USD)
   const [symbol, setSymbol] = useState("GOLDBEES.NS"); // INR default
   const symbols = [
-    { value: "GOLDBEES.NS", label: "Gold ETF (NSE, INR)", currency: "INR" },
+    {
+      value: "GOLDBEES.NS",
+      label: "Gold ETF (NSE, INR, per 0.01 gram)",
+      currency: "INR",
+    },
     { value: "GC=F", label: "COMEX Gold Futures (USD/oz)", currency: "USD" },
   ];
 
